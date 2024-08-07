@@ -1,0 +1,1268 @@
+
+* {
+    outline: none;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./font/Montserrat.ttf");
+}
+
+@font-face {
+    font-family: "sharp";
+    src: url("./font/sharp.ttf");
+}
+
+@font-face {
+    font-family: "sharp-bold";
+    src: url("./font/sharp-bold.ttf");
+}
+
+.container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content {
+    width: 1320px;
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.nav-logo {
+    width: 100%;
+}
+
+.nav-logo img {
+    height: 300px;
+    cursor: pointer;
+}
+
+.nav-text {
+    width: 100%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-text a{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 60ms ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-text a:hover {
+    color: #0e9ded !important;
+}
+
+.btn-doar {
+    font-family: "sharp";
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    background: #0e9ded;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 20px;
+    transition: all 60ms ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+.dog {
+    background-image: url("../img/pata.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right 20px center;
+}
+
+.btn-doar:hover {
+    background-color: #2eb4ff;
+}
+
+.btn-doar:active {
+    transform: translateY(10px);
+}
+
+.grid-apresentacao {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 400px;
+}
+
+#blue {
+    color: #0e9ded;
+    font-family: "sharp";
+}
+
+.apresentacao-text {
+    padding-left: 50px;
+    font-family: "sharp";
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.apresentacao-text h1 {
+    font-family: "sharp-bold";
+    color: #0e9ded;
+}
+
+.apresentacao-img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao-img img {
+    height: 400px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.grid-sobre {
+    width: 1320px;
+    height: 600px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.sobre-text {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sobre-text h1 {
+    font-family: "sharp-bold";
+    color: #0e9ded;
+}
+
+.sobre-text a {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.sobre-img {
+    width: 100%;
+    max-width: 336px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-img img {
+    margin-top: -20px;
+    width: 336px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.classes-sobre {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 20px 300px;
+    border-radius: 4px;
+}
+
+.box-classes {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 390px;
+    transition: all 60ms ease-in-out;
+}
+
+.texto-caixa {
+ margin-left: 10px;
+}
+
+.texto-caixa h5 {
+    font-family: "sharp-bold";
+    color: #0e9ded;
+}
+
+.texto-caixa a {
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: black !important;
+}
+
+.caixa {
+    min-width: 109px;
+    min-height: 105px;
+    border-radius: 10px;
+    background: #0e9ded;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 60ms ease;
+}
+
+.caixa:hover {
+    background: #26b0ff !important;
+}
+
+.caixa img {
+    height: 48px;
+}
+
+.grid-historia {
+    margin-top: -20px;
+    width: 1320px;
+    min-height: 600px;
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+
+.historia-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia-img img {
+    width: 500px;
+    cursor: pointer;
+}
+
+.historia-texto {
+    width: 100%;
+    padding: 10px;
+}
+
+.historia-texto h3 {
+    font-family: "sharp-bold";
+    color: #0e9ded;
+    margin-top: -10px;
+}
+
+.historia-texto h2 {
+    font-family: "sharp-bold";
+    color: black;
+}
+
+.historia-img h2 {
+    font-family: "sharp-bold";
+}
+
+.historia {
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px;
+    min-height: 430px;
+    max-height: 430px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia-txt {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.historia-txt a {
+    font-family: "Montserrat";
+}
+
+.historia-txt span {
+    color: #0e9ded;
+    font-weight: bold;
+}
+
+#aspas2 {
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    left: 0px;
+}
+
+#aspas1 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;  
+    height: 50px; 
+}
+
+.historia-img p {
+    font-family: "Montserrat";
+    margin-top: -10px;
+}
+
+.historia-img span {
+    color: #0e9ded;
+}
+
+footer {
+    height: 692px;
+    width: 1320px;
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+}
+
+.grid-footer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.footer-img {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contato {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 140px;
+}
+
+.footer-contato i {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer-contato h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-top: -20px;
+    font-size: 23px;
+}
+
+.adotados {
+    height: 620px;
+}
+
+.title-adotados {
+    width: 100%;
+}
+
+.grid-adotados {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-adotado {
+    flex: 1;
+    width: 307px;
+    height: 318px;
+    margin: 10px;
+    background: #C0E6FA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title-adotados h1 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #0E9DED;
+}
+
+.box-adotado h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #0E9DED;
+}
+
+.box-adotado a {
+    font-weight: bold;
+    font-family: "sharp";
+    font-size: 20px;
+}
+
+#waw2 {
+    height: 100px;
+    position: absolute;
+    top:-25px;
+    left: -20px;
+}
+
+
+#adotado:hover {
+    transform: translateY(-10px);
+}
+
+#adotado {
+    width: 176px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 90ms ease-in-out;
+}
+
+.box-adotado h2 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    color:  #0E9DED;
+    margin-top: 29px;
+}
+
+.title-adotados h3 {
+    font-family: "League Spartan", sans-serif;
+     margin-top: -13px;
+     font-size: 20px;
+}
+
+.footer-contato a {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e9ded !important;
+    cursor: pointer;
+}
+
+.footer-extras {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 30px;
+}
+
+.footer-extras h3 {
+    font-size: 23px;
+    margin-top: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: black;   
+}
+
+.footer-extras a {
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #0e9ded !important;
+}
+
+.footer-extras span {
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.footer-img img {
+    height: 360px;
+    cursor: pointer;
+}
+
+.footer-img img:hover {
+    animation: shake 150ms 2 linear;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: -50px;
+    padding: 40px;
+}
+
+.copyright a {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.copyright span {
+    font-family: "sharp-bold";
+    font-weight: bold; 
+    color: #0e9ded;
+}
+
+#footer {
+    margin-top: 0px;
+    max-height: 500px !important;
+    height: 500px !important;
+}
+
+.adotar-ja {
+    width: 1320px;
+    height: 600px;
+}
+
+.grid-adote-ja {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.adotar-conteudo {
+    width: 100%;
+    padding-right: 160px;
+}
+
+.adotar-box {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adotar-box img {
+    height: 290px;
+    margin-top: -100px;
+}
+
+.adotar-box h2 {
+    font-family: "League Spartan", sans-serif;
+    color: #0E9DED;
+    font-size: 40px;
+    margin-top: -10px;
+    line-height: 1;
+}
+
+.adotar-box h1 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+.adotar-conteudo h1 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    color: #0E9DED;
+    font-size: 40px;
+}
+
+.adotar-box button {
+    margin-top: 30px;
+    width: 291px;
+    height: 109px;
+    background-color: #0E9DED;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    animation: pulse 2s infinite;
+}
+
+.adotar-box button:hover {
+    background-color: #26b0ff;
+}
+
+.adotar-conteudo a {
+    font-family: "League Spartan", sans-serif;
+    font-size: 30px;
+}
+
+.adotar-conteudo span {
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    color: #0E9DED;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h1 {
+    font-size: 40px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    color: #0E9DED;
+}
+
+.modal-content a {
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-top: -15px;
+}
+
+.opc-doar {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+}
+
+.box-donate {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border: 2px solid #0E9DED;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-donate i {
+    font-size: 20px;
+}
+
+.box-donate button {
+    width: 200px;
+    background: transparent;
+    background: #0E9DED;
+    border-style: none;
+    padding: 10px;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50px;
+    transition: all 60ms ease-in-out;
+}
+
+.box-donate button:hover {
+    background: #44baff;
+}
+
+.box-donate button:active {
+    transform: translateY(10px);
+}
+
+.box-donate h2 {
+    margin-top: 50px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 30px;
+    color: black;
+    margin-top: -15px;
+}
+
+.box-donate img {
+    height: 150px;
+    margin: 30px;
+    transition: all 60ms ease-in-out;
+}
+
+.box-donate img:hover {
+    animation: shake 150ms 2 linear;
+}
+
+.modal-personalizado{
+    min-width: 1380px;
+    margin-left: 70;
+}
+
+.modal-personalizado.modal-content {
+    min-height: 50vh;
+}
+
+.modal-content {
+    padding: 40px !important;
+    animation: modal-animation .6s;
+}
+
+.vakinha {
+    background: #0E9DED;
+}
+
+.vakinha h2 {
+    color: white;
+}
+
+.vakinha button {
+    background: white;
+    color: black;
+}
+
+.vakinha button:hover {
+    background-color: #c9c9c9;
+}
+
+.close-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal button {
+    padding: 20px;
+    font-family: "sharp";
+    width: 150px;
+    background: #0E9DED;
+    color: white;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 60ms ease-in-out;
+}
+
+.close-modal button:hover {
+    background: #56c1ff;
+}
+
+.close-modal button:active {
+    transform: translateY(10px);
+}
+
+@-webkit-keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+  
+@keyframes modal-animation {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(3px, 0);
+    }
+    50% {
+      transform: translate(-3px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0e9ded;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  footer {
+    margin-top: 400px;
+  }
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 1);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(88, 120, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 50px rgba(88, 120, 243, 0);
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.agradecimentos {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px
+}
+
+.agradecimentos-img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.agradecimentos-img img {
+    height: 230px;
+    cursor: pointer;
+    transition: all 60ms ease-in-out;
+}
+
+.agradecimentos-img img:hover {
+    animation: shake 150ms 2 linear;
+}
+
+.agradecimentos-conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-right: 100px;
+}
+
+#me {
+    cursor: pointer;
+}
+
+#pix {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 360px) {
+
+    .modal-personalizado {
+        width: 360px !important;
+    }
+
+    #pix {
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .grid-adote-ja {
+        width: 360px !important;
+    }
+
+    .adotar-ja {
+        margin-bottom: 400px !important;
+        margin-top: 1000px !important;
+    }
+
+    .box-classes {
+        width: 340px !important;
+    }
+
+    .adotar-box {
+        margin-top: 10px !important;
+        width: 330px !important;
+        margin-left: -45px !important;
+    }
+
+    .adotar-conteudo {
+        min-width: 360px !important;
+        max-width: 360px !important;
+        padding: 0px !important;
+        text-align: left;
+        margin-left: -70px;
+    }
+
+    #waw2 {
+        left:40px !important;
+        height: 100px;
+    }
+
+    .nav-logo img {
+        margin-left: 70px !important;
+    }
+
+    .grid-apresentacao {
+        width: 360px !important;
+    }
+
+    .apresentacao-text {
+        width: 340px !important;
+    }
+
+    .grid-sobre {
+        margin-top: -80px;
+        width: 360px !important;
+    }
+
+    .sobre-img {
+        min-width: 360px !important;
+        max-width: 360px !important;
+        padding: 0px !important;
+    }
+
+    .sobre-img img {
+        padding: 0px !important;
+        height: 400px !important;
+        min-width: 340px !important;
+        max-width: 340px !important;
+        margin-left: -1px !important;
+    }
+
+    .sobre-text {
+        padding: 20px !important;
+        width: 360px !important;
+    }
+
+    .nav-text button {
+        margin-right: 40px !important;
+    }
+
+    .modal-content {
+        width: 350px;
+    }
+
+    .adotar-box {
+        margin-left: -20px;
+        padding: 20px !important;
+        margin-bottom: -200px;
+    }
+
+    .adotar-conteudo {
+        padding: 50px !important;
+    }
+
+    .grid-adote-ja {
+        margin-top: -140px !important;
+    }
+
+}
+
+@media only screen and (max-width: 428px) {
+
+    .modal-personalizado {
+        min-width: 428px !important;
+        max-width: 428px !important;
+    }
+
+    .adotar-box {
+        margin-left: -20px;
+        padding: 50px !important;
+        margin-bottom: -200px;
+    }
+
+    .adotar-conteudo {
+        padding: 50px !important;
+    }
+
+    .grid-adote-ja {
+        margin-top: -140px !important;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .grid-historia {
+        display: inline;
+        margin-top: -100px;
+        width: 480px;
+    }
+
+    .footer-img {
+        height: 450px;
+        margin-top: 20px;
+    }
+
+    .historia-img  {
+        display: inline;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .historia-img img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .historia-texto {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .historia {
+        min-width: 350px;
+        max-width: 350px;
+    }
+
+    .btn-doar {
+        width: 180px;
+        margin-right: 20px;
+    }
+
+    .grid-footer {
+        width: 480px;
+        display: inline;
+    }
+
+    .apresentacao {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        padding: 0px;
+    }
+
+    .apresentacao h1 {
+        margin-top: 20px;
+    }
+
+    .grid-apresentacao {
+        display: inline;
+    }
+
+    .ctn {
+        max-width: 480px;
+        min-width: 480px;
+    }
+    
+
+    #footer {
+        margin-top: 250px;
+        max-height: 500px !important;
+        height: 500px !important;
+    }
+
+    .nav-text a {
+        display: none;
+    }
+
+    .nav-content img {
+        height: 100px;
+        margin-left: 50px;
+    }
+
+    .nav-content {
+        width: 480px;
+    }
+
+    .grid-sobre {
+        width: 480px;
+        display: inline;
+        height: 1550px;
+    }
+
+    .sobre-text {
+        width: 480px;
+    }
+
+    footer {
+        width: 480px;
+    }
+
+    .sobre-img {
+        padding: 0px;
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    .sobre-img img {
+        padding: 0px;
+        min-width: 450px;
+        margin-left: 150px;
+        margin-top: 0px;
+    }
+
+    .classes-sobre {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+    }
+
+    .footer-contato {
+        height: 10px;
+        width: 480px;
+        margin-left: -54px;
+    }
+
+    .footer-extras {
+        width: 330px;
+        height: 340px;
+        margin-left: 50px; 
+    }
+
+    .adotados {
+        margin-top: 880px;
+        margin-bottom: 560px;
+    }
+
+    .title-adotados {
+        text-align: center;
+    }
+
+    .grid-adotados {
+        display: inline;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-adotado {
+        width: 420px;
+        max-width: 420px;
+        min-height: 400px;
+        margin-bottom: 10px;
+    }
+
+    .adotar-ja {
+        margin-top: 930px;
+        width: 480px;
+        padding: 0px;
+        margin-bottom: 360px;
+    }
+
+    .adotar-box {
+        width: 480px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .adotar-box h1 {
+        font-size: 34px;
+    }
+
+    .adotar-box h2{
+        font-size: 30px;
+    }
+
+    .grid-adote-ja {
+        display: inline;
+    }
+
+    .adotar-conteudo {
+        width: 480px;
+        max-width: 480px;
+        font-size: 20px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .modal-personalizado {
+        min-width: 480px;
+        max-width: 480px;
+    }
+
+    .opc-doar {
+        position: relative;
+        display: inline;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .agradecimentos {
+        display: inline;
+    }
+
+    .agradecimentos-conteudo {
+        padding-right: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-donate {
+        margin-top: 20px;
+    }
+
+    .close-modal button {
+        margin-top: 50px;
+    }
+
+}
